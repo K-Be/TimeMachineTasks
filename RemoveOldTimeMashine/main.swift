@@ -16,37 +16,31 @@ guard (CommandLine.argc > 1) else
 
 
 func makeEscapedPathString(path: String) -> String {
-	let escaped = "\"\(path)\""
+	let escaped = path
 	return escaped
 }
 
 
 func removeBackups(atPaths paths: Array<String>) {
-	
-	var pathsConcat = String()
-	
 	for str in paths {
-		if (pathsConcat.count > 0) {
-			pathsConcat.append(" ")
+		let proc = Process()
+		proc.executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
+		proc.arguments = ["tmutil", "delete", makeEscapedPathString(path:str)]
+		let readingPipe = Pipe()
+		proc.standardOutput = readingPipe
+		do{
+			try proc.run()
 		}
-		pathsConcat.append(makeEscapedPathString(path:str));
+		catch let exept {
+			print("exception \(exept)")
+		}
+		
+		let file = readingPipe.fileHandleForReading
+		let string = String(data: file.readDataToEndOfFile(), encoding: .utf8);
+		print(string ?? "");
+		
 	}
 	
-	let proc = Process()
-	proc.executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-	proc.arguments = ["tmutil", "delete", pathsConcat]
-	let readingPipe = Pipe()
-	proc.standardOutput = readingPipe
-	do{
-		try proc.run()
-	}
-	catch let exept {
-		print("exception \(exept)")
-	}
-	
-	let file = readingPipe.fileHandleForReading
-	let string = String(data: file.readDataToEndOfFile(), encoding: .utf8);
-	print(string ?? "");
 }
 
 
