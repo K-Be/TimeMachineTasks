@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "496CFE9720A15CB100E8DB35"
-               BuildableName = "RemoveOldTimeMashine"
-               BlueprintName = "RemoveOldTimeMashine"
-               ReferencedContainer = "container:RemoveOldTimeMashine.xcodeproj">
+               BuildableName = "RemoveOldTimeMachineBackup"
+               BlueprintName = "RemoveOldTimeMachineBackup"
+               ReferencedContainer = "container:RemoveOldTimeMachine.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "496CFE9720A15CB100E8DB35"
-            BuildableName = "RemoveOldTimeMashine"
-            BlueprintName = "RemoveOldTimeMashine"
-            ReferencedContainer = "container:RemoveOldTimeMashine.xcodeproj">
+            BuildableName = "RemoveOldTimeMachineBackup"
+            BlueprintName = "RemoveOldTimeMachineBackup"
+            ReferencedContainer = "container:RemoveOldTimeMachine.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "496CFE9720A15CB100E8DB35"
-            BuildableName = "RemoveOldTimeMashine"
-            BlueprintName = "RemoveOldTimeMashine"
-            ReferencedContainer = "container:RemoveOldTimeMashine.xcodeproj">
+            BuildableName = "RemoveOldTimeMachineBackup"
+            BlueprintName = "RemoveOldTimeMachineBackup"
+            ReferencedContainer = "container:RemoveOldTimeMachine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "496CFE9720A15CB100E8DB35"
-            BuildableName = "RemoveOldTimeMashine"
-            BlueprintName = "RemoveOldTimeMashine"
-            ReferencedContainer = "container:RemoveOldTimeMashine.xcodeproj">
+            BuildableName = "RemoveOldTimeMachineBackup"
+            BlueprintName = "RemoveOldTimeMachineBackup"
+            ReferencedContainer = "container:RemoveOldTimeMachine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

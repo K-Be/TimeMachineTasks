@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		496CFE9820A15CB100E8DB35 /* RemoveOldTimeMashine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RemoveOldTimeMashine; sourceTree = BUILT_PRODUCTS_DIR; };
+		496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RemoveOldTimeMachineBackup; sourceTree = BUILT_PRODUCTS_DIR; };
 		496CFE9B20A15CB100E8DB35 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsFinder.swift; sourceTree = "<group>"; };
 		496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPathMethods.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		496CFE8F20A15CB100E8DB35 = {
 			isa = PBXGroup;
 			children = (
-				496CFE9A20A15CB100E8DB35 /* RemoveOldTimeMashine */,
+				496CFE9A20A15CB100E8DB35 /* RemoveOldTimeMachine */,
 				496CFE9920A15CB100E8DB35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,27 +53,27 @@
 		496CFE9920A15CB100E8DB35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				496CFE9820A15CB100E8DB35 /* RemoveOldTimeMashine */,
+				496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		496CFE9A20A15CB100E8DB35 /* RemoveOldTimeMashine */ = {
+		496CFE9A20A15CB100E8DB35 /* RemoveOldTimeMachine */ = {
 			isa = PBXGroup;
 			children = (
 				496CFE9B20A15CB100E8DB35 /* main.swift */,
 				496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */,
 				496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */,
 			);
-			path = RemoveOldTimeMashine;
+			path = RemoveOldTimeMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		496CFE9720A15CB100E8DB35 /* RemoveOldTimeMashine */ = {
+		496CFE9720A15CB100E8DB35 /* RemoveOldTimeMachineBackup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 496CFE9F20A15CB100E8DB35 /* Build configuration list for PBXNativeTarget "RemoveOldTimeMashine" */;
+			buildConfigurationList = 496CFE9F20A15CB100E8DB35 /* Build configuration list for PBXNativeTarget "RemoveOldTimeMachineBackup" */;
 			buildPhases = (
 				496CFE9420A15CB100E8DB35 /* Sources */,
 				496CFE9520A15CB100E8DB35 /* Frameworks */,
@@ -83,9 +83,9 @@
 			);
 			dependencies = (
 			);
-			name = RemoveOldTimeMashine;
+			name = RemoveOldTimeMachineBackup;
 			productName = RemoveOldTimeMashine;
-			productReference = 496CFE9820A15CB100E8DB35 /* RemoveOldTimeMashine */;
+			productReference = 496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 496CFE9320A15CB100E8DB35 /* Build configuration list for PBXProject "RemoveOldTimeMashine" */;
+			buildConfigurationList = 496CFE9320A15CB100E8DB35 /* Build configuration list for PBXProject "RemoveOldTimeMachine" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				496CFE9720A15CB100E8DB35 /* RemoveOldTimeMashine */,
+				496CFE9720A15CB100E8DB35 /* RemoveOldTimeMachineBackup */,
 			);
 		};
 /* End PBXProject section */
@@ -268,7 +268,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		496CFE9320A15CB100E8DB35 /* Build configuration list for PBXProject "RemoveOldTimeMashine" */ = {
+		496CFE9320A15CB100E8DB35 /* Build configuration list for PBXProject "RemoveOldTimeMachine" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496CFE9D20A15CB100E8DB35 /* Debug */,
@@ -277,7 +277,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		496CFE9F20A15CB100E8DB35 /* Build configuration list for PBXNativeTarget "RemoveOldTimeMashine" */ = {
+		496CFE9F20A15CB100E8DB35 /* Build configuration list for PBXNativeTarget "RemoveOldTimeMachineBackup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				496CFEA020A15CB100E8DB35 /* Debug */,

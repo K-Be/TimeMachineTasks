@@ -15,17 +15,11 @@ guard (CommandLine.argc > 1) else
 }
 
 
-func makeEscapedPathString(path: String) -> String {
-	let escaped = path
-	return escaped
-}
-
-
 func removeBackups(atPaths paths: Array<String>) {
 	for str in paths {
 		let proc = Process()
 		proc.executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-		proc.arguments = ["tmutil", "delete", makeEscapedPathString(path:str)]
+		proc.arguments = ["tmutil", "delete", str];
 		let readingPipe = Pipe()
 		proc.standardOutput = readingPipe
 		do{
