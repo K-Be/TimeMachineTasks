@@ -10,6 +10,7 @@
 		496CFE9C20A15CB100E8DB35 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFE9B20A15CB100E8DB35 /* main.swift */; };
 		496CFEA320A15D8E00E8DB35 /* BackupsFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */; };
 		496CFEA520A16BE000E8DB35 /* StringPathMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */; };
+		49C7792120AADFFA00548FBA /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7792020AADFFA00548FBA /* Executor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		496CFE9B20A15CB100E8DB35 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsFinder.swift; sourceTree = "<group>"; };
 		496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPathMethods.swift; sourceTree = "<group>"; };
+		49C7792020AADFFA00548FBA /* Executor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				496CFE9B20A15CB100E8DB35 /* main.swift */,
 				496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */,
 				496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */,
+				49C7792020AADFFA00548FBA /* Executor.swift */,
 			);
 			path = RemoveOldTimeMachine;
 			sourceTree = "<group>";
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C7792120AADFFA00548FBA /* Executor.swift in Sources */,
 				496CFEA520A16BE000E8DB35 /* StringPathMethods.swift in Sources */,
 				496CFE9C20A15CB100E8DB35 /* main.swift in Sources */,
 				496CFEA320A15D8E00E8DB35 /* BackupsFinder.swift in Sources */,

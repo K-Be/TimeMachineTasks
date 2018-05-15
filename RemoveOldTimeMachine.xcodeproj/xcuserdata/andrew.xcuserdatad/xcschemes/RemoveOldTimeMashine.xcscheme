@@ -61,16 +61,6 @@
             ReferencedContainer = "container:RemoveOldTimeMachine.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "/Volumes/Storage/Backups.backupdb/Andrew&#x2019;s\ Mac\ mini/"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "2017-01-16-115016"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

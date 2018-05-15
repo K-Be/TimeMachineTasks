@@ -8,46 +8,30 @@
 
 import Foundation
 
-guard (CommandLine.argc > 1) else
-{
-	print("should add path to direcotry");
-	exit(1);
-}
-
-
 func removeBackups(atPaths paths: Array<String>) {
 	for str in paths {
-		let proc = Process()
-		proc.executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-		proc.arguments = ["tmutil", "delete", str];
-		let readingPipe = Pipe()
-		proc.standardOutput = readingPipe
+		let executor = Executor("/usr/bin/xcrun", ["tmutil", "delete", str])
 		do{
-			try proc.run()
+			let output = try executor.exec()
+			print(output);
 		}
-		catch let exept {
-			print("exception \(exept)")
+		catch let exception {
+			print("can't execute with exception: \(exception)");
 		}
-		
-		let file = readingPipe.fileHandleForReading
-		let string = String(data: file.readDataToEndOfFile(), encoding: .utf8);
-		print(string ?? "");
-		
 	}
 	
 }
 
 
-let pathToDirectory = CommandLine.arguments[1]
-let finder = BackupsFinder(path: pathToDirectory)
+let finder = BackupsFinder()
 let backups = finder.findBackups()
 
-print("finded bachups:")
+print("finded backups:")
 for path in backups {
 	print(path.lastPathComponent);
 }
 
-if (CommandLine.argc > 2)
+if (CommandLine.argc > 1)
 {
 	let backupForRemoving : String = CommandLine.arguments[2]
 	let index = backups.index { (path) -> Bool in
@@ -66,8 +50,8 @@ if (CommandLine.argc > 2)
 }
 else
 {
-	print("to remove backups. Run application with second argument backup name")
-	print("all backups before will be removed (and inputted)")
+	print("to remove backups. Run application with argument backup name")
+	print("all backups before that will be removed (and inputted)")
 }
 
 
