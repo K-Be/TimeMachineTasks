@@ -12,3 +12,5 @@ echo "${date} backup started" >> $LOG_FILE
 xcrun tmutil startbackup --auto --block >> $LOG_FILE
 echo "${date} backup ended" >> $LOG_FILE
 
+exit 0
+
