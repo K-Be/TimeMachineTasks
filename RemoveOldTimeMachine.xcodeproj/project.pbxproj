@@ -12,6 +12,8 @@
 		496CFEA520A16BE000E8DB35 /* StringPathMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */; };
 		49C7792120AADFFA00548FBA /* Executor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7792020AADFFA00548FBA /* Executor.swift */; };
 		49C7792320AAEC1400548FBA /* BackupsOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7792220AAEC1400548FBA /* BackupsOperator.swift */; };
+		49C7792C20AC4CD500548FBA /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C7792B20AC4CD500548FBA /* AppleScriptObjC.framework */; };
+		49C7793C20AC4E9800548FBA /* RunBackup.sh in Resources */ = {isa = PBXBuildFile; fileRef = 49C7793B20AC4E9800548FBA /* RunBackup.sh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,12 +29,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		492A069C20AD250C000A2A73 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RemoveOldTimeMachineBackup; sourceTree = BUILT_PRODUCTS_DIR; };
 		496CFE9B20A15CB100E8DB35 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		496CFEA220A15D8E00E8DB35 /* BackupsFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsFinder.swift; sourceTree = "<group>"; };
 		496CFEA420A16BE000E8DB35 /* StringPathMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringPathMethods.swift; sourceTree = "<group>"; };
 		49C7792020AADFFA00548FBA /* Executor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executor.swift; sourceTree = "<group>"; };
 		49C7792220AAEC1400548FBA /* BackupsOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupsOperator.swift; sourceTree = "<group>"; };
+		49C7792920AC4CD500548FBA /* BackupRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackupRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49C7792B20AC4CD500548FBA /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
+		49C7793B20AC4E9800548FBA /* RunBackup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = RunBackup.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49C7792620AC4CD500548FBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7792C20AC4CD500548FBA /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				496CFE9A20A15CB100E8DB35 /* RemoveOldTimeMachine */,
+				49C7792D20AC4CD500548FBA /* BackupRunner */,
+				49C7792A20AC4CD500548FBA /* Frameworks */,
 				496CFE9920A15CB100E8DB35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */,
+				49C7792920AC4CD500548FBA /* BackupRunner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +89,23 @@
 				49C7792020AADFFA00548FBA /* Executor.swift */,
 			);
 			path = RemoveOldTimeMachine;
+			sourceTree = "<group>";
+		};
+		49C7792A20AC4CD500548FBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49C7792B20AC4CD500548FBA /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49C7792D20AC4CD500548FBA /* BackupRunner */ = {
+			isa = PBXGroup;
+			children = (
+				49C7793B20AC4E9800548FBA /* RunBackup.sh */,
+				492A069C20AD250C000A2A73 /* install.sh */,
+			);
+			path = BackupRunner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +128,23 @@
 			productReference = 496CFE9820A15CB100E8DB35 /* RemoveOldTimeMachineBackup */;
 			productType = "com.apple.product-type.tool";
 		};
+		49C7792820AC4CD500548FBA /* BackupRunner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49C7793A20AC4CD700548FBA /* Build configuration list for PBXNativeTarget "BackupRunner" */;
+			buildPhases = (
+				49C7792520AC4CD500548FBA /* Sources */,
+				49C7792620AC4CD500548FBA /* Frameworks */,
+				49C7792720AC4CD500548FBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BackupRunner;
+			productName = BackupRunner;
+			productReference = 49C7792920AC4CD500548FBA /* BackupRunner.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +158,9 @@
 					496CFE9720A15CB100E8DB35 = {
 						CreatedOnToolsVersion = 9.4;
 					};
+					49C7792820AC4CD500548FBA = {
+						CreatedOnToolsVersion = 9.4;
+					};
 				};
 			};
 			buildConfigurationList = 496CFE9320A15CB100E8DB35 /* Build configuration list for PBXProject "RemoveOldTimeMachine" */;
@@ -115,6 +169,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 496CFE8F20A15CB100E8DB35;
 			productRefGroup = 496CFE9920A15CB100E8DB35 /* Products */;
@@ -122,9 +177,21 @@
 			projectRoot = "";
 			targets = (
 				496CFE9720A15CB100E8DB35 /* RemoveOldTimeMachineBackup */,
+				49C7792820AC4CD500548FBA /* BackupRunner */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49C7792720AC4CD500548FBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C7793C20AC4E9800548FBA /* RunBackup.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		496CFE9420A15CB100E8DB35 /* Sources */ = {
@@ -136,6 +203,13 @@
 				496CFE9C20A15CB100E8DB35 /* main.swift in Sources */,
 				49C7792320AAEC1400548FBA /* BackupsOperator.swift in Sources */,
 				496CFEA320A15D8E00E8DB35 /* BackupsFinder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49C7792520AC4CD500548FBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +347,38 @@
 			};
 			name = Release;
 		};
+		49C7793820AC4CD700548FBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BackupRunner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rav.org.BackupRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49C7793920AC4CD700548FBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BackupRunner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rav.org.BackupRunner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +396,15 @@
 			buildConfigurations = (
 				496CFEA020A15CB100E8DB35 /* Debug */,
 				496CFEA120A15CB100E8DB35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49C7793A20AC4CD700548FBA /* Build configuration list for PBXNativeTarget "BackupRunner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49C7793820AC4CD700548FBA /* Debug */,
+				49C7793920AC4CD700548FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
